@@ -1,86 +1,54 @@
 <html>
 
-    <head>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
 
-        <title>The Cardiac Epigenome Browser</title>
 
-        <!-- build:css /static/css/App.css -->
-        <link rel="stylesheet" href="../static/css/App.css">
-        <!-- /build -->
 
-    </head>
+<div class="header" style="background-image: url(img/header01.png); background-size:auto 120px; background-repeat:repeat-x;">The Cardiac Epigenome 
 
-    <body>
+Browser</div>
 
-        <header class="intro-header" style="background-image: url(../static/img/banner.png)">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <div class="search-box">
-                        <div class="row">
-                            <!--div class="col-md-2">
-                                <div class="fly">
-                                    <img src="/static/img/circose.png">
-                                </div>
-                            </div-->
-                            <div class="col-md-9 col-md-offset-1">
-                                <h1>Cardiac Epigenome Browser</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-        </header>
+<div class="navigation">
+	<div class="container">
+		<div class="dropdown"><button class="dropbtn"><a href="http://cardiovascularepigenetics.org/index.html">Homer</a></button></div> 
+	</div> <!-- Ende Container -->
+</div> <!-- Ende Navigation -->
 
-        <!-- Content -->
+
+<!-- Inhalt -->
         <div id="search" class="container"></div>
-
-        <!-- Content -->
         <div id="content" class="container content"></div>
 
-
-        <!-- Footer -->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 img-portfolio vcenter">
-                        <a href="http://portal.uni-freiburg.de/pharmakologie/ii/">
-                            <!-- build:src /static/img/logo_uni.png -->
-                            <img src="../static/img/logo_uni.png" height="10%">
-                            <!-- /build -->
-                        </a>
-                    </div>
-                    <div class="col-md-3 img-portfolio vcenter">
-                        <a href="http://www.sfb992.uni-freiburg.de">
-                            <!-- build:src /static/img/biochem.logo.png -->
-                            <img src="../static/img/logo_sfb992.png" height="10%">
-                            <!-- /build -->
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </footer>
+<!-- Ende Inhalt -->
 
 
-    </body>
-    <!-- build:js /static/js/App.js -->
+<div class="footer">
+<div class="logo-container"><a href="http://portal.uni-freiburg.de/pharmakologie/ii/" target="blank"><img src="img/logo_uni.png" style="height:auto; 
+
+max-height:100px; width:auto; display: block; margin-left: auto; margin-right: auto"></a></div>
+<div class="logo-container"><a href="http://www.sfb992.uni-freiburg.de/" target="blank"><img src="img/logo_sfb992.png" style="height:auto; max-
+
+height:100px; width:auto; display: block; margin-left: auto; margin-right: auto"></a></div>
+</div>
+<div class="footer2">The Cardiac Epigenome Browser is based on <a href="https://github.com/maxplanck-ie/HiCBrowser">HiCBrowser</a> by Ramirez et al. 
+
+(<a href="https://doi.org/10.1101/115063" target="blank">https://doi.org/10.1101/115063</a>).</div>
+
+</body>
+
+<!-- build:js /static/js/App.js -->
     <script src="../static/js/App.js"></script>
     <!-- /build -->
 
     <script>
-
       App.init({
         browser_example: 'X:3800000-4340000',
         gene_example: 'mof'
       });
-
     </script>
 
 </html>
-
